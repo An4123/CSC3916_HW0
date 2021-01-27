@@ -7,8 +7,15 @@ module.exports = async (phrase) => {
             q: `${phrase}`
         }
     })
+    let customObject = {
+        data: results.data,
+        status: results.status,
+        statusText: results.statusText,
+        headers: results.headers,
+        requestHeader: results.config.headeres
 
-    return JSON.stringify(results.data);
+}
+    return JSON.stringify(customObject);
 }
 
 /*  console.log(results.data);
