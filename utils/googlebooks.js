@@ -1,6 +1,6 @@
 const axios = require('axios')
 
-module.exports = async (phrase) => {
+main = async (phrase) => {
     const results = await axios.get('https://www.googleapis.com/books/v1/volumes', {
         params: {
             format: 'json',
@@ -13,11 +13,11 @@ module.exports = async (phrase) => {
         statusText: results.statusText,
         headers: results.headers,
         requestHeader: results.config.headeres
-
 }
+    // console.log(customObject);
     return JSON.stringify(customObject);
 }
-
+main("turing")
 /*  console.log(results.data);
     console.log(results.status);
     console.log(results.statusText);
