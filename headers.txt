@@ -1,0 +1,21 @@
+Content type - This entity is used to indicate the media type of the resource
+
+Vary - Determines how to match future request headers and decide wheter a cache response should be used or a new one
+
+Content-Encoding - used to compress the media type and indicates which encodings was used on the entity.
+
+Date - Date of the when the message was originated
+
+Server - How the server handled the request
+
+Cache Control - chaching mechanism for request and response
+
+X XSS Protection - Stops pages from loading when they etect reflected cross-site scritping attacks.
+
+X Frame options - idicates if a browser should render a page in <frame> <iframe> <embed> or <object>
+
+X Content Type Options - Marked used by server to indicate the MIME types used in the Content-Type header should not be changed and be followed
+
+Alt SVC - Used to advertise different ways to reach the service
+
+Transfer Encoding - the form of encoding used to safely transfer the payload body to the user
